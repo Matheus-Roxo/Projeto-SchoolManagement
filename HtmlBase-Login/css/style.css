@@ -2,14 +2,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 
-#card-img{
-  background-color: lightpink;
-  width: 56%;
-  height: 1000px;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#flex{
+  display: flex; 
+  flex-direction:row-reverse;
+}
+
+#img-overlay, p{
+  background-color:black ;
+  display: flex;
+  align-items: centerq;
+}
+
+#img-overlay{
+  height: 800px;
+  width: 720px;
+  background: #FF3535; 
+  opacity: 0.7;
+  align-items: center;
+}
+
+#img-login{
+  height: 800px;
+  width: 720px;
   display: flex;
   align-items: center;
-
+  justify-content: center;
+  background-image: url(../images/card.png);
+  margin-right: 810px;
+  color: rgb(252, 1, 1);
+  font-size: 40px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
 }
 
 h1{
@@ -24,24 +54,20 @@ h1{
 }
 
 body{
-  background-color: #537d88;
-  align-items: center;
-  display: flex;
+  /* background-color: #537d88; */
+
 }
 
 #card {
   background: #1F4C57;
-  height: 1002px;
-  width: 817px;
   position: absolute;
-  left: 1103px;
   color: #fff;
 }
 
 #card-title{
   width: 713px;
   text-align: center;
-  font-family: 'Bebas Neue';
+  font-family: 'Oswald', sans-serif;
   font-size: 48px;
   margin-bottom: 30px;
   margin-top: 100px;
@@ -49,6 +75,8 @@ body{
 
 #card-content {
   padding: 12px 44px;
+  height: 778px;
+  width: 720px;
 }
 
 #submit-btn{
@@ -101,11 +129,8 @@ label {
 }
 
 img{
-  width: 60%;
-  opacity: 0.2;
-  margin-right: 800px;
-  background-color: #537d88;
-  align-items: center;
+  width: 500%;
+  height: 100%;
 }
 
 
